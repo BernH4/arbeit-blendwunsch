@@ -126,7 +126,7 @@ Dir['tmp/*'].each do |complete_file|
 end
 
 # convert back to windows line endings \r\n
-system('unix2dos -q fertige_blendwuensche/* ')
+system("find fertige_blendwuensche/ -name '*txt' | xargs unix2dos -q")
 
 FileUtils.rm_rf('tmp')
 

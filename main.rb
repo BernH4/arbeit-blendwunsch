@@ -4,11 +4,9 @@
 # error wenn mehr als eine datei in sicx_data
 #
 # Spezialfall: _354/Z4AG2A/S05/HEBEANLAGEN/BA_PROZESS/WARTUNGSSCHALTER_TOC
-require 'pry-byebug'
+# require 'pry-byebug'
 require 'fileutils'
-require 'csv'
-require 'ap'
-require 'open3'
+# require 'ap'
 
 FileUtils.rm_rf('fertige_blendwuensche')
 FileUtils.rm_rf('tmp')
